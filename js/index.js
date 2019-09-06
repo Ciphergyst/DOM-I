@@ -51,6 +51,19 @@ naviMenu(3).innerHtml = "Features";
 naviMenu(4).innerHtml = "About";
 naviMenu(5).innerHtml = "Contact";
 
+// nav items need to be green
+naviMenu.style.color = 'green';
+
+// Lets create some new nav link items
+const newNavMenuItem1 = document.createElement('a');
+newNavMenuItem.textContent = "Ideas";
+
+const newNavMenuItem2 = document.createElement('a');
+newNavMenuItem.textContent = "Videos";
+
+newNavMenuItem1.appendChild('a');
+
+newNavMenuItem2.prepend('a');
 
 
 // Add new h1 element
