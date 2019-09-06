@@ -52,7 +52,9 @@ naviMenu(4).innerHtml = "About";
 naviMenu(5).innerHtml = "Contact";
 
 // nav items need to be green
-naviMenu.style.color = 'green';
+naviMenu.forEach((element) => {
+  Element.style.color = "green";
+}) 
 
 // Lets create some new nav link items
 const newNavMenuItem1 = document.createElement('a');
@@ -113,3 +115,8 @@ const contactDetails = documentquerySelectorAll('.contact p');
 contactDetails[0].textContent = "123 Way 456 Street, somewhere, USA";
 contactDetails[1].textContent = "1 (888) 888-8888";
 contactDetails[2].textContent = "sales@greatidea.io";
+
+// Add copyright footer
+const newFooter = document.createElement('footer');
+
+newFooter.textContent = "Copyright Great Idea! 2018";
