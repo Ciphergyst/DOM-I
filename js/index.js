@@ -53,7 +53,7 @@ naviMenu(5).innerHtml = "Contact";
 
 // nav items need to be green
 naviMenu.forEach((element) => {
-  Element.style.color = "green";
+  element.style.color = "green";
 }) 
 
 // Lets create some new nav link items
@@ -72,7 +72,7 @@ newNavMenuItem2.prepend('a');
 const mainHeading = document.querySelector('h1');
 mainHeading.innerHtml = "Dom Is Awesome";
 // Need to format h1 into column
-mainHeading.
+mainHeading.style.flexwrap = "wrap";
 
 // Add header image
 const codeImageTop = document.getElementById('cta-img');
