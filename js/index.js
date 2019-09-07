@@ -123,3 +123,7 @@ contactDetails[2].textContent = "sales@greatidea.io";
 const newFooter = document.createElement('footer');
 
 newFooter.textContent = "Copyright Great Idea! 2018";
+
+const body = document.querySelector('body');
+
+body.append(newFooter);
