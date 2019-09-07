@@ -44,12 +44,12 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // Adding navigation menu
 const naviMenu = document.querySelectorAll('a');
 // returns Nodelist
-naviMenu[0].innerHtml = "Services";
-naviMenu(1).innerHtml = "Products";
-naviMenu(2).innerHtml = "Vision";
-naviMenu(3).innerHtml = "Features";
-naviMenu(4).innerHtml = "About";
-naviMenu(5).innerHtml = "Contact";
+naviMenu[0].textContent = "Services";
+naviMenu[1].textContent = "Products";
+naviMenu[2].textContent = "Vision";
+naviMenu[3].textContent = "Features";
+naviMenu[4].textContent = "About";
+naviMenu[5].textContent = "Contact";
 
 // nav items need to be green
 naviMenu.forEach((element) => {
@@ -58,19 +58,22 @@ naviMenu.forEach((element) => {
 
 // Lets create some new nav link items
 const newNavMenuItem1 = document.createElement('a');
-newNavMenuItem.textContent = "Ideas";
+newNavMenuItem1.textContent = "Ideas";
+const newNavigationElements = document.querySelector('nav');
 
 const newNavMenuItem2 = document.createElement('a');
-newNavMenuItem.textContent = "Videos";
+newNavMenuItem2.textContent = "Videos";
 
-newNavMenuItem1.appendChild('a');
+newNavigationElements.appendChild(newNavMenuItem1);
+newNavMenuItem1.style.color = "green";
 
-newNavMenuItem2.prepend('a');
+newNavigationElements.prepend(newNavMenuItem2);
+newNavMenuItem2.style.color = "green";
 
 
 // Add new h1 element
 const mainHeading = document.querySelector('h1');
-mainHeading.innerHtml = "Dom Is Awesome";
+mainHeading.textContent = "Dom Is Awesome";
 // Need to format h1 into column
 mainHeading.style.flexwrap = "wrap";
 
@@ -80,7 +83,7 @@ codeImageTop.src = "img/header-img.png";
 
 // Add Button text
 const headerButton = document.querySelector('button');
-headerButton.innerHtml = "Get Started";
+headerButton.textContent = "Get Started";
 
 // add All h4 Titles
 const contentTitles = document.querySelectorAll('h4');
@@ -104,14 +107,14 @@ textContent[4].innerHTML = "Vision content elementum magna eros, ac posuere elvi
 
 // Add middle image
 const middleCodeImage = document.getElementById('middle-img');
-middleCodeImage.src = "img/mid=page-accent.jpg";
+middleCodeImage.src = "img/mid-page-accent.jpg";
 
 // Add contact section
 // this is the 6th node in the previously declared list
 contentTitles[5].textContent = "Contact";
 
 // lets grab all of the p tags in the contact class
-const contactDetails = documentquerySelectorAll('.contact p');
+const contactDetails = document.querySelectorAll('.contact p');
 contactDetails[0].textContent = "123 Way 456 Street, somewhere, USA";
 contactDetails[1].textContent = "1 (888) 888-8888";
 contactDetails[2].textContent = "sales@greatidea.io";
